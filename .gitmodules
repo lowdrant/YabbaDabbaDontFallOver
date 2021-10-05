@@ -1,0 +1,3 @@
+[submodule "flight-computer/fred/lib/TVC"]
+	path = flight-computer/fred/lib/TVC
+	url = git@github.com:lowdrant/YabbaDabbaDontFallOver-ITAR.git
