@@ -1,4 +1,237 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 61C13606
+P 9100 1850
+F 0 "J?" H 9128 1826 50  0000 L CNN
+F 1 "XT60" H 9128 1735 50  0000 L CNN
+F 2 "" H 9100 1850 50  0001 C CNN
+F 3 "~" H 9100 1850 50  0001 C CNN
+	1    9100 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61C139D5
+P 8800 2050
+F 0 "#PWR?" H 8800 1800 50  0001 C CNN
+F 1 "GND" H 8805 1877 50  0000 C CNN
+F 2 "" H 8800 2050 50  0001 C CNN
+F 3 "" H 8800 2050 50  0001 C CNN
+	1    8800 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 1950 8800 1950
+Wire Wire Line
+	8800 1950 8800 2050
+$Comp
+L Device:D_Schottky D?
+U 1 1 61C14F25
+P 8600 1850
+F 0 "D?" H 8600 2066 50  0000 C CNN
+F 1 "D_Schottky" H 8600 1975 50  0000 C CNN
+F 2 "" H 8600 1850 50  0001 C CNN
+F 3 "~" H 8600 1850 50  0001 C CNN
+	1    8600 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 1850 8900 1850
+Wire Wire Line
+	8450 1850 8300 1850
+Wire Wire Line
+	8300 1850 8300 1750
+$Comp
+L power:+BATT #PWR?
+U 1 1 61C1565C
+P 8300 1750
+F 0 "#PWR?" H 8300 1600 50  0001 C CNN
+F 1 "+BATT" H 8315 1923 50  0000 C CNN
+F 2 "" H 8300 1750 50  0001 C CNN
+F 3 "" H 8300 1750 50  0001 C CNN
+	1    8300 1750
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 2300 4250 650  450 
+U 61C15AA8
+F0 "ignitor" 50
+F1 "inductor.sch" 50
+F2 "sig" I R 2950 4450 50 
+$EndSheet
+Text Notes 8500 1550 0    50   ~ 0
+schottky must be rated to 10A+
+$Sheet
+S 2300 4900 650  450 
+U 61C229AC
+F0 "servoX" 50
+F1 "servo.sch" 50
+F2 "pwm" I R 2950 5150 50 
+$EndSheet
+$Sheet
+S 2300 5550 650  450 
+U 61C267AB
+F0 "servoY" 50
+F1 "servo.sch" 50
+F3 "pwm" I R 2950 5750 50 
+$EndSheet
+$Sheet
+S 2300 3600 650  450 
+U 61C27E7D
+F0 "parachute1" 50
+F1 "inductor.sch" 50
+F2 "sig" I R 2950 3800 50 
+$EndSheet
+$Sheet
+S 2300 2950 650  450 
+U 61C27F52
+F0 "parachute2" 50
+F1 "inductor.sch" 50
+F2 "sig" I R 2950 3150 50 
+$EndSheet
+$Comp
+L Device:R R?
+U 1 1 61C2ADC0
+P 9350 5600
+F 0 "R?" H 9420 5646 50  0000 L CNN
+F 1 "5k6" H 9420 5555 50  0000 L CNN
+F 2 "" V 9280 5600 50  0001 C CNN
+F 3 "~" H 9350 5600 50  0001 C CNN
+	1    9350 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61C2BA2C
+P 9350 6000
+F 0 "R?" H 9420 6046 50  0000 L CNN
+F 1 "1k" H 9420 5955 50  0000 L CNN
+F 2 "" V 9280 6000 50  0001 C CNN
+F 3 "~" H 9350 6000 50  0001 C CNN
+	1    9350 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 5750 9350 5800
+$Comp
+L power:GND #PWR?
+U 1 1 61C2BBC9
+P 9350 6200
+F 0 "#PWR?" H 9350 5950 50  0001 C CNN
+F 1 "GND" H 9355 6027 50  0000 C CNN
+F 2 "" H 9350 6200 50  0001 C CNN
+F 3 "" H 9350 6200 50  0001 C CNN
+	1    9350 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 6200 9350 6150
+$Comp
+L power:+BATT #PWR?
+U 1 1 61C2C0C2
+P 9350 5400
+F 0 "#PWR?" H 9350 5250 50  0001 C CNN
+F 1 "+BATT" H 9365 5573 50  0000 C CNN
+F 2 "" H 9350 5400 50  0001 C CNN
+F 3 "" H 9350 5400 50  0001 C CNN
+	1    9350 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 5400 9350 5450
+Wire Wire Line
+	9350 5800 9450 5800
+Connection ~ 9350 5800
+Wire Wire Line
+	9350 5800 9350 5850
+Text Label 9450 5800 0    50   ~ 0
+vbatt
+Text Notes 8350 6600 0    50   ~ 0
+vbatt must not exceed 3v3 with +batt up to 20v
+$Comp
+L dino:TEENSY3.6 U?
+U 1 1 61C2E455
+P 4900 3400
+F 0 "U?" H 5450 3625 50  0000 C CNN
+F 1 "TEENSY3.6" H 5450 3534 50  0000 C CNN
+F 2 "" H 5450 3500 50  0001 C CNN
+F 3 "" H 5450 3500 50  0001 C CNN
+	1    4900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61C30CB6
+P 6050 3500
+F 0 "#PWR?" H 6050 3250 50  0001 C CNN
+F 1 "GND" V 6055 3372 50  0000 R CNN
+F 2 "" H 6050 3500 50  0001 C CNN
+F 3 "" H 6050 3500 50  0001 C CNN
+	1    6050 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 3500 6000 3500
+$Comp
+L power:GND #PWR?
+U 1 1 61C329EA
+P 6050 4800
+F 0 "#PWR?" H 6050 4550 50  0001 C CNN
+F 1 "GND" V 6055 4672 50  0000 R CNN
+F 2 "" H 6050 4800 50  0001 C CNN
+F 3 "" H 6050 4800 50  0001 C CNN
+	1    6050 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 4800 6000 4800
+$Comp
+L power:GND #PWR?
+U 1 1 61C32E84
+P 4850 3400
+F 0 "#PWR?" H 4850 3150 50  0001 C CNN
+F 1 "GND" V 4855 3272 50  0000 R CNN
+F 2 "" H 4850 3400 50  0001 C CNN
+F 3 "" H 4850 3400 50  0001 C CNN
+	1    4850 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3400 4900 3400
+$Comp
+L power:+BATT #PWR?
+U 1 1 61C344A1
+P 6050 3400
+F 0 "#PWR?" H 6050 3250 50  0001 C CNN
+F 1 "+BATT" V 6065 3528 50  0000 L CNN
+F 2 "" H 6050 3400 50  0001 C CNN
+F 3 "" H 6050 3400 50  0001 C CNN
+	1    6050 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 3400 6000 3400
+Text Notes 4850 5950 0    50   ~ 0
+TODO: determine VIN max rating
+Text Notes 5250 5850 0    50   ~ 0
+TODO: pinout
+Text Notes 5250 1500 0    50   ~ 0
+TODO: gps
+Text Notes 5250 1600 0    50   ~ 0
+TODO: antenna
 $EndSCHEMATC
