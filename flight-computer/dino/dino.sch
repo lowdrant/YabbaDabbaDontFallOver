@@ -16,161 +16,117 @@ $EndDescr
 $Comp
 L Connector:Conn_01x02_Female J?
 U 1 1 61C13606
-P 5000 6150
-F 0 "J?" H 5028 6126 50  0000 L CNN
-F 1 "XT60" H 5028 6035 50  0000 L CNN
-F 2 "" H 5000 6150 50  0001 C CNN
-F 3 "~" H 5000 6150 50  0001 C CNN
-	1    5000 6150
+P 4450 5250
+F 0 "J?" H 4478 5226 50  0000 L CNN
+F 1 "XT60" H 4478 5135 50  0000 L CNN
+F 2 "" H 4450 5250 50  0001 C CNN
+F 3 "~" H 4450 5250 50  0001 C CNN
+	1    4450 5250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61C139D5
-P 4700 6350
-F 0 "#PWR?" H 4700 6100 50  0001 C CNN
-F 1 "GND" H 4705 6177 50  0000 C CNN
-F 2 "" H 4700 6350 50  0001 C CNN
-F 3 "" H 4700 6350 50  0001 C CNN
-	1    4700 6350
+P 4150 5450
+F 0 "#PWR?" H 4150 5200 50  0001 C CNN
+F 1 "GND" H 4155 5277 50  0000 C CNN
+F 2 "" H 4150 5450 50  0001 C CNN
+F 3 "" H 4150 5450 50  0001 C CNN
+	1    4150 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 6250 4700 6250
+	4250 5350 4150 5350
 Wire Wire Line
-	4700 6250 4700 6350
-$Comp
-L Device:D_Schottky D?
-U 1 1 61C14F25
-P 4500 6150
-F 0 "D?" H 4500 6366 50  0000 C CNN
-F 1 "D_Schottky" H 4500 6275 50  0000 C CNN
-F 2 "" H 4500 6150 50  0001 C CNN
-F 3 "~" H 4500 6150 50  0001 C CNN
-	1    4500 6150
-	1    0    0    -1  
-$EndComp
+	4150 5350 4150 5450
 Wire Wire Line
-	4650 6150 4800 6150
-Wire Wire Line
-	4350 6150 4200 6150
-Wire Wire Line
-	4200 6150 4200 6050
+	4100 5250 4250 5250
 $Comp
 L power:+BATT #PWR?
 U 1 1 61C1565C
-P 4200 6050
-F 0 "#PWR?" H 4200 5900 50  0001 C CNN
-F 1 "+BATT" H 4215 6223 50  0000 C CNN
-F 2 "" H 4200 6050 50  0001 C CNN
-F 3 "" H 4200 6050 50  0001 C CNN
-	1    4200 6050
+P 3550 5200
+F 0 "#PWR?" H 3550 5050 50  0001 C CNN
+F 1 "+BATT" H 3565 5373 50  0000 C CNN
+F 2 "" H 3550 5200 50  0001 C CNN
+F 3 "" H 3550 5200 50  0001 C CNN
+	1    3550 5200
 	1    0    0    -1  
 $EndComp
+Text Notes 4100 5050 0    50   ~ 0
+schottky must be rated to 5A+
 $Sheet
-S 700  6700 650  450 
-U 61C15AA8
-F0 "ignitor" 50
-F1 "inductor.sch" 50
-F2 "sig" I R 1350 6900 50 
-F3 "v_loside" I R 1350 6850 50 
-$EndSheet
-Text Notes 4400 5850 0    50   ~ 0
-schottky must be rated to 10A+
-$Sheet
-S 1650 5400 650  450 
+S 2000 5100 650  450 
 U 61C229AC
 F0 "servoX/1" 50
 F1 "servo.sch" 50
-F2 "pwm" I R 2300 5650 50 
+F2 "pwm" I R 2650 5350 50 
 $EndSheet
 $Sheet
-S 1650 6050 650  450 
+S 2000 5750 650  450 
 U 61C267AB
 F0 "servoY/2" 50
 F1 "servo.sch" 50
-F2 "pwm" I R 2300 6250 50 
-$EndSheet
-$Sheet
-S 700  5400 650  450 
-U 61C27F52
-F0 "parachute2" 50
-F1 "inductor.sch" 50
-F2 "sig" I R 1350 5650 50 
-F3 "v_loside" I R 1350 5550 50 
+F2 "pwm" I R 2650 5950 50 
 $EndSheet
 $Comp
 L dino:TEENSY3.6 U?
 U 1 1 61C2E455
-P 3950 1400
-F 0 "U?" H 4500 1625 50  0000 C CNN
-F 1 "TEENSY3.6" H 4500 1534 50  0000 C CNN
-F 2 "" H 4500 1500 50  0001 C CNN
-F 3 "" H 4500 1500 50  0001 C CNN
-	1    3950 1400
+P 4000 1350
+F 0 "U?" H 4550 1575 50  0000 C CNN
+F 1 "TEENSY3.6" H 4550 1484 50  0000 C CNN
+F 2 "" H 4550 1450 50  0001 C CNN
+F 3 "" H 4550 1450 50  0001 C CNN
+	1    4000 1350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 61C30CB6
-P 5100 1500
-F 0 "#PWR?" H 5100 1250 50  0001 C CNN
-F 1 "GND" V 5105 1372 50  0000 R CNN
-F 2 "" H 5100 1500 50  0001 C CNN
-F 3 "" H 5100 1500 50  0001 C CNN
-	1    5100 1500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5100 1500 5050 1500
-$Comp
-L power:GND #PWR?
 U 1 1 61C329EA
-P 5100 2800
-F 0 "#PWR?" H 5100 2550 50  0001 C CNN
-F 1 "GND" V 5105 2672 50  0000 R CNN
-F 2 "" H 5100 2800 50  0001 C CNN
-F 3 "" H 5100 2800 50  0001 C CNN
-	1    5100 2800
+P 5150 2750
+F 0 "#PWR?" H 5150 2500 50  0001 C CNN
+F 1 "GND" V 5155 2622 50  0000 R CNN
+F 2 "" H 5150 2750 50  0001 C CNN
+F 3 "" H 5150 2750 50  0001 C CNN
+	1    5150 2750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5100 2800 5050 2800
+	5150 2750 5100 2750
 $Comp
 L power:GND #PWR?
 U 1 1 61C32E84
-P 3900 1400
-F 0 "#PWR?" H 3900 1150 50  0001 C CNN
-F 1 "GND" V 3905 1272 50  0000 R CNN
-F 2 "" H 3900 1400 50  0001 C CNN
-F 3 "" H 3900 1400 50  0001 C CNN
-	1    3900 1400
+P 3950 1350
+F 0 "#PWR?" H 3950 1100 50  0001 C CNN
+F 1 "GND" V 3955 1222 50  0000 R CNN
+F 2 "" H 3950 1350 50  0001 C CNN
+F 3 "" H 3950 1350 50  0001 C CNN
+	1    3950 1350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3900 1400 3950 1400
+	3950 1350 4000 1350
 Wire Wire Line
-	5100 1400 5050 1400
+	5150 1350 5100 1350
 $Comp
 L power:+5V #PWR?
 U 1 1 61C21E5E
-P 5100 1400
-F 0 "#PWR?" H 5100 1250 50  0001 C CNN
-F 1 "+5V" V 5115 1528 50  0000 L CNN
-F 2 "" H 5100 1400 50  0001 C CNN
-F 3 "" H 5100 1400 50  0001 C CNN
-	1    5100 1400
+P 5150 1350
+F 0 "#PWR?" H 5150 1200 50  0001 C CNN
+F 1 "+5V" V 5165 1478 50  0000 L CNN
+F 2 "" H 5150 1350 50  0001 C CNN
+F 3 "" H 5150 1350 50  0001 C CNN
+	1    5150 1350
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x08 J?
 U 1 1 61C26038
-P 9250 2400
-F 0 "J?" H 9330 2392 50  0000 L CNN
-F 1 "nRF24L01+_Breakout" H 9330 2301 50  0000 L CNN
-F 2 "" H 9250 2400 50  0001 C CNN
-F 3 "https://www.sparkfun.com/products/691" H 9250 2400 50  0001 C CNN
-	1    9250 2400
+P 9250 2000
+F 0 "J?" H 9330 1992 50  0000 L CNN
+F 1 "nRF24L01+_Breakout" H 9330 1901 50  0000 L CNN
+F 2 "" H 9250 2000 50  0001 C CNN
+F 3 "https://www.sparkfun.com/products/705" H 9250 2000 50  0001 C CNN
+	1    9250 2000
 	1    0    0    -1  
 $EndComp
 $Bitmap
@@ -4117,235 +4073,1114 @@ F5 04 09 12 84 01 82 AE 27 48 90 20 0C 10 74 3D 41 82 04 61 80 A0 EB 09 12 24 08
 82 04 09 F2 9F E3 FF 01 E8 1B FE 6E EC D9 50 33 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Wire Wire Line
-	1450 5650 1350 5650
-Wire Wire Line
-	1450 6300 1350 6300
-Wire Wire Line
-	1450 6900 1350 6900
-Wire Wire Line
-	2400 5650 2300 5650
-Wire Wire Line
-	2400 6250 2300 6250
 $Sheet
-S 1650 6700 650  450 
+S 2000 6400 650  450 
 U 61C3727F
 F0 "servo3" 50
 F1 "servo.sch" 50
-F2 "pwm" I R 2300 6950 50 
+F2 "pwm" I R 2650 6650 50 
 $EndSheet
 $Sheet
-S 1650 7350 650  450 
+S 2000 7050 650  450 
 U 61C37282
 F0 "servo4" 50
 F1 "servo.sch" 50
-F2 "pwm" I R 2300 7550 50 
+F2 "pwm" I R 2650 7250 50 
 $EndSheet
-Wire Wire Line
-	2400 6950 2300 6950
-Wire Wire Line
-	2400 7550 2300 7550
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 61C52D85
-P 7750 2050
-F 0 "J?" H 7830 2042 50  0000 L CNN
-F 1 "ZOE-M8Q" H 7830 1951 50  0000 L CNN
-F 2 "" H 7750 2050 50  0001 C CNN
-F 3 "https://www.sparkfun.com/products/15193" H 7750 2050 50  0001 C CNN
-	1    7750 2050
-	1    0    0    -1  
-$EndComp
-Text Notes 8950 1900 0    50   ~ 10
+Text Notes 8950 1500 0    50   ~ 10
 COMMS
-Text Label 9000 2600 2    50   ~ 0
-MISO
 Text Label 9000 2200 2    50   ~ 0
+MISO
+Text Label 9000 1800 2    50   ~ 0
 CE
-Text Label 9000 2700 2    50   ~ 0
-IRQ
-Text Label 9000 2500 2    50   ~ 0
-MOSI
-Text Label 9000 2400 2    50   ~ 0
-SCK
 Text Label 9000 2300 2    50   ~ 0
+IRQ
+Text Label 9000 2100 2    50   ~ 0
+MOSI
+Text Label 9000 2000 2    50   ~ 0
+SCK
+Text Label 9000 1900 2    50   ~ 0
 CSN
 $Comp
 L power:+3V3 #PWR?
 U 1 1 61D37B4C
-P 5100 1600
-F 0 "#PWR?" H 5100 1450 50  0001 C CNN
-F 1 "+3V3" V 5115 1728 50  0000 L CNN
-F 2 "" H 5100 1600 50  0001 C CNN
-F 3 "" H 5100 1600 50  0001 C CNN
-	1    5100 1600
+P 5150 1550
+F 0 "#PWR?" H 5150 1400 50  0001 C CNN
+F 1 "+3V3" V 5165 1678 50  0000 L CNN
+F 2 "" H 5150 1550 50  0001 C CNN
+F 3 "" H 5150 1550 50  0001 C CNN
+	1    5150 1550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5100 1600 5050 1600
+	5150 1550 5100 1550
 $Comp
 L power:+3V3 #PWR?
 U 1 1 61D3A0FD
-P 3900 2800
-F 0 "#PWR?" H 3900 2650 50  0001 C CNN
-F 1 "+3V3" V 3915 2928 50  0000 L CNN
-F 2 "" H 3900 2800 50  0001 C CNN
-F 3 "" H 3900 2800 50  0001 C CNN
-	1    3900 2800
+P 3950 2750
+F 0 "#PWR?" H 3950 2600 50  0001 C CNN
+F 1 "+3V3" V 3965 2878 50  0000 L CNN
+F 2 "" H 3950 2750 50  0001 C CNN
+F 3 "" H 3950 2750 50  0001 C CNN
+	1    3950 2750
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	3900 2800 3950 2800
-$Comp
-L power:+3V3 #PWR?
-U 1 1 61D430DB
-P 7500 1950
-F 0 "#PWR?" H 7500 1800 50  0001 C CNN
-F 1 "+3V3" V 7515 2078 50  0000 L CNN
-F 2 "" H 7500 1950 50  0001 C CNN
-F 3 "" H 7500 1950 50  0001 C CNN
-	1    7500 1950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61D43709
-P 7500 2050
-F 0 "#PWR?" H 7500 1800 50  0001 C CNN
-F 1 "GND" V 7505 1922 50  0000 R CNN
-F 2 "" H 7500 2050 50  0001 C CNN
-F 3 "" H 7500 2050 50  0001 C CNN
-	1    7500 2050
-	0    1    1    0   
-$EndComp
-Text Label 7500 2150 2    50   ~ 0
-SCL
-Text Label 7500 2250 2    50   ~ 0
-SDA
+	3950 2750 4000 2750
 Wire Wire Line
-	7500 2250 7550 2250
+	9000 1800 9050 1800
 Wire Wire Line
-	7500 2150 7550 2150
+	9000 1900 9050 1900
 Wire Wire Line
-	7500 2050 7550 2050
+	9000 2000 9050 2000
 Wire Wire Line
-	7500 1950 7550 1950
+	9000 2100 9050 2100
 Wire Wire Line
 	9000 2200 9050 2200
 Wire Wire Line
 	9000 2300 9050 2300
-Wire Wire Line
-	9000 2400 9050 2400
-Wire Wire Line
-	9000 2500 9050 2500
-Wire Wire Line
-	9000 2600 9050 2600
-Wire Wire Line
-	9000 2700 9050 2700
-NoConn ~ 5050 2700
-Text Notes 5100 2700 0    50   ~ 0
+NoConn ~ 5100 2650
+Text Notes 5150 2650 0    50   ~ 0
 do not connect led gpio
 $Comp
 L power:+3V3 #PWR?
 U 1 1 61D59E6C
-P 9000 2100
-F 0 "#PWR?" H 9000 1950 50  0001 C CNN
-F 1 "+3V3" V 9015 2228 50  0000 L CNN
-F 2 "" H 9000 2100 50  0001 C CNN
-F 3 "" H 9000 2100 50  0001 C CNN
-	1    9000 2100
+P 9000 1700
+F 0 "#PWR?" H 9000 1550 50  0001 C CNN
+F 1 "+3V3" V 9015 1828 50  0000 L CNN
+F 2 "" H 9000 1700 50  0001 C CNN
+F 3 "" H 9000 1700 50  0001 C CNN
+	1    9000 1700
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9000 2100 9050 2100
+	9000 1700 9050 1700
 $Comp
 L power:GND #PWR?
 U 1 1 61D5E081
-P 9000 2800
-F 0 "#PWR?" H 9000 2550 50  0001 C CNN
-F 1 "GND" V 9005 2672 50  0000 R CNN
-F 2 "" H 9000 2800 50  0001 C CNN
-F 3 "" H 9000 2800 50  0001 C CNN
-	1    9000 2800
+P 9000 2400
+F 0 "#PWR?" H 9000 2150 50  0001 C CNN
+F 1 "GND" V 9005 2272 50  0000 R CNN
+F 2 "" H 9000 2400 50  0001 C CNN
+F 3 "" H 9000 2400 50  0001 C CNN
+	1    9000 2400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9000 2800 9050 2800
-Text Notes 1300 4550 0    79   ~ 16
+	9000 2400 9050 2400
+Text Notes 1500 4500 0    79   ~ 16
 Actuators
 Text Notes 8250 800  0    79   ~ 16
 Sensors
-Text Notes 4200 4550 0    79   ~ 16
+Text Notes 4350 4500 0    79   ~ 16
 Power System
-$Sheet
-S 700  7350 650  450 
-U 61D7382A
-F0 "spare" 50
-F1 "inductor.sch" 50
-F2 "sig" I R 1350 7550 50 
-F3 "v_loside" I R 1350 7650 50 
-$EndSheet
-Wire Wire Line
-	1450 7550 1350 7550
 Wire Notes Line width 20
 	6300 6650 6300 600 
-Text Notes 7500 1750 0    50   ~ 10
-GPS
-Text Notes 4350 6750 0    50   ~ 10
-Battery
-Text Notes 4300 5550 0    50   ~ 10
+Text Notes 5000 5650 0    50   ~ 10
+Battery Measurement
+Text Notes 3650 4800 0    50   ~ 10
 Reverse Polarity Protection
-$Sheet
-S 4050 6950 650  450 
-U 61DB5304
-F0 "sheet61DB5301" 50
-F1 "batt-div.sch" 50
-F2 "vo" O R 4700 7250 50 
-F3 "vi" I R 4700 7150 50 
-$EndSheet
 $Comp
 L power:+BATT #PWR?
 U 1 1 61DBE3A0
-P 4750 7150
-F 0 "#PWR?" H 4750 7000 50  0001 C CNN
-F 1 "+BATT" H 4765 7323 50  0000 C CNN
-F 2 "" H 4750 7150 50  0001 C CNN
-F 3 "" H 4750 7150 50  0001 C CNN
-	1    4750 7150
-	0    1    1    0   
+P 5750 5900
+F 0 "#PWR?" H 5750 5750 50  0001 C CNN
+F 1 "+BATT" H 5765 6073 50  0000 C CNN
+F 2 "" H 5750 5900 50  0001 C CNN
+F 3 "" H 5750 5900 50  0001 C CNN
+	1    5750 5900
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4750 7150 4700 7150
-Text Label 4800 7250 0    50   ~ 0
-vbatt
-Wire Wire Line
-	4700 7250 4800 7250
-Wire Notes Line width 20
-	6250 4250 500  4250
 Text Notes 4400 800  0    79   ~ 16
 MCU
-Text Notes 6550 6500 0    79   ~ 0
-TODO\n- pinout\n- diode selection\n- IMU selection\n- lcsc part numbers\n- servo connectors\n- gps footprint\n- comms footprint
-Text Label 3850 2700 2    50   ~ 0
+Text Notes 8550 4100 0    79   ~ 0
+TODO\n- comms pinout/connections\n- IMU selection\n- servo connectors\n- gps footprint\n- comms footprint
+Text Label 3900 2650 2    50   ~ 0
 MISO
-Text Label 3850 2600 2    50   ~ 0
+Text Label 3900 2550 2    50   ~ 0
 MOSI
 Wire Notes Line width 20
 	3300 4300 3300 7950
 $Sheet
-S 700  6050 650  450 
+S 800  5100 650  450 
 U 61C27E7D
 F0 "parachute1" 50
 F1 "inductor.sch" 50
-F2 "sig" I R 1350 6300 50 
-F3 "v_loside" I R 1350 6200 50 
+F2 "sig" I R 1450 5200 50 
+F3 "v_sens_loside" I R 1450 5300 50 
+F4 "v_hiside" I R 1450 5400 50 
 $EndSheet
-Text Label 5150 2600 0    50   ~ 0
+Text Label 5200 2550 0    50   ~ 0
 SCK
 Wire Wire Line
-	5150 2600 5050 2600
+	5200 2550 5100 2550
 Wire Wire Line
-	3850 2700 3950 2700
+	3900 2650 4000 2650
 Wire Wire Line
-	3850 2600 3950 2600
+	3900 2550 4000 2550
+Text Notes 6500 3850 0    79   ~ 0
+Maintainer Notes\n- Designed for JLCPCB fab\n- Prefer JLCPCB "basic parts"\n- 2 layer board for cost
+$Comp
+L Device:D_Schottky D?
+U 1 1 61E472DC
+P 3950 5250
+AR Path="/61C27E7D/61E472DC" Ref="D?"  Part="1" 
+AR Path="/61C27F52/61E472DC" Ref="D?"  Part="1" 
+AR Path="/61C15AA8/61E472DC" Ref="D?"  Part="1" 
+AR Path="/61E472DC" Ref="D?"  Part="1" 
+F 0 "D?" H 4000 5450 50  0000 R CNN
+F 1 "40V 5A 550mV" H 4250 5350 50  0000 R CNN
+F 2 "Diode_SMD:D_SMA" V 3950 5250 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810192041_MDD%EF%BC%88Microdiode-Electronics%EF%BC%89-SS54_C22452.pdf" V 3950 5250 50  0001 C CNN
+F 4 "C22452" V 3950 5250 50  0001 C CNN "LCSC"
+	1    3950 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61E608FF
+P 7000 5200
+AR Path="/61C27E7D/61E608FF" Ref="R?"  Part="1" 
+AR Path="/61C27F52/61E608FF" Ref="R?"  Part="1" 
+AR Path="/61C15AA8/61E608FF" Ref="R?"  Part="1" 
+AR Path="/61E608FF" Ref="R?"  Part="1" 
+F 0 "R?" V 6900 5200 50  0000 C CNN
+F 1 "10k" V 7000 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7000 5200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811062009_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" H 7000 5200 50  0001 C CNN
+F 4 "C25804" V 7000 5200 50  0001 C CNN "LCSC"
+	1    7000 5200
+	0    1    1    0   
+$EndComp
+Text Notes 8100 4500 0    79   ~ 16
+Indicators
+Text Label 6800 5200 2    50   ~ 0
+p1_vhi
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61E8DD33
+P 5750 6200
+AR Path="/61C229AC/61E8DD33" Ref="TP?"  Part="1" 
+AR Path="/61C3727F/61E8DD33" Ref="TP?"  Part="1" 
+AR Path="/61E8DD33" Ref="TP?"  Part="1" 
+F 0 "TP?" H 5808 6318 50  0000 L CNN
+F 1 "TestPoint" H 5808 6227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose" H 5950 6200 50  0001 C CNN
+F 3 "~" H 5950 6200 50  0001 C CNN
+	1    5750 6200
+	1    0    0    1   
+$EndComp
+Text Notes 6950 4800 0    50   ~ 10
+Arming
+Text Notes 6550 6400 0    50   ~ 0
+armed indicators must\nbe hardware controlled
+Text Label 5200 3450 0    50   ~ 0
+pwm_servoX
+Text Label 5200 3350 0    50   ~ 0
+pwm_servoY
+Text Label 5200 3250 0    50   ~ 0
+pwm_servo3
+Text Label 5200 3150 0    50   ~ 0
+pwm_servo4
+Wire Wire Line
+	5100 3150 5200 3150
+Wire Wire Line
+	5100 3350 5200 3350
+Wire Wire Line
+	5100 3250 5200 3250
+Wire Wire Line
+	5200 3450 5100 3450
+Text Notes 5250 3600 0    50   ~ 0
+servos on FTM3, CH4-7
+NoConn ~ 5100 1450
+Text Label 3900 1750 2    50   ~ 0
+SCL
+Text Label 3900 1850 2    50   ~ 0
+SDA
+Wire Wire Line
+	3900 1850 4000 1850
+Wire Wire Line
+	3900 1750 4000 1750
+Text Notes 3500 1800 0    50   ~ 0
+i2c 2
+Text Notes 3450 2600 0    50   ~ 0
+spi 0
+$Comp
+L power:+BATT #PWR?
+U 1 1 61EE7D8D
+P 3800 6950
+F 0 "#PWR?" H 3800 6800 50  0001 C CNN
+F 1 "+BATT" H 3815 7123 50  0000 C CNN
+F 2 "" H 3800 6950 50  0001 C CNN
+F 3 "" H 3800 6950 50  0001 C CNN
+	1    3800 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61EE841F
+P 4650 6950
+F 0 "#PWR?" H 4650 6800 50  0001 C CNN
+F 1 "+3V3" H 4665 7123 50  0000 C CNN
+F 2 "" H 4650 6950 50  0001 C CNN
+F 3 "" H 4650 6950 50  0001 C CNN
+	1    4650 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61EE894E
+P 4200 7400
+F 0 "#PWR?" H 4200 7150 50  0001 C CNN
+F 1 "GND" H 4205 7227 50  0000 C CNN
+F 2 "" H 4200 7400 50  0001 C CNN
+F 3 "" H 4200 7400 50  0001 C CNN
+	1    4200 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 7400 4200 7350
+Wire Wire Line
+	4650 7000 4650 6950
+Wire Wire Line
+	3900 7000 3800 7000
+Wire Wire Line
+	3800 7000 3800 6950
+$Comp
+L Device:CP1_Small C?
+U 1 1 61EF2D79
+P 4800 7200
+F 0 "C?" H 4891 7246 50  0000 L CNN
+F 1 "10u" H 4891 7155 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 4800 7200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811071223_AVX-TAJA106K016RNJ_C7171.pdf" H 4800 7200 50  0001 C CNN
+F 4 "C7171" H 4800 7200 50  0001 C CNN "LCSC"
+	1    4800 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 61EF7603
+P 4650 7200
+F 0 "C?" H 4741 7246 50  0000 L CNN
+F 1 "10u" H 4741 7155 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 4650 7200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811071223_AVX-TAJA106K016RNJ_C7171.pdf" H 4650 7200 50  0001 C CNN
+F 4 "C7171" H 4650 7200 50  0001 C CNN "LCSC"
+	1    4650 7200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AMS1117-3.3 U?
+U 1 1 61EE70B6
+P 4200 7000
+F 0 "U?" H 4200 7242 50  0000 C CNN
+F 1 "AMS1117-3.3" H 4200 7151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4200 7200 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 4300 6750 50  0001 C CNN
+F 4 "C6186" H 4200 7000 50  0001 C CNN "LCSC"
+	1    4200 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 61F02524
+P 3800 7200
+F 0 "C?" H 3891 7246 50  0000 L CNN
+F 1 "10u" H 3891 7155 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 3800 7200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811071223_AVX-TAJA106K016RNJ_C7171.pdf" H 3800 7200 50  0001 C CNN
+F 4 "C7171" H 3800 7200 50  0001 C CNN "LCSC"
+	1    3800 7200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 7350 3800 7350
+Wire Wire Line
+	3800 7350 3800 7300
+Connection ~ 4200 7350
+Wire Wire Line
+	4200 7350 4200 7300
+Wire Wire Line
+	3800 7100 3800 7000
+Connection ~ 3800 7000
+Wire Wire Line
+	4200 7350 4650 7350
+Wire Wire Line
+	4650 7350 4650 7300
+Wire Wire Line
+	4650 7350 4800 7350
+Wire Wire Line
+	4800 7350 4800 7300
+Connection ~ 4650 7350
+Wire Wire Line
+	4650 7100 4650 7000
+Wire Wire Line
+	4650 7000 4800 7000
+Wire Wire Line
+	4800 7000 4800 7100
+Connection ~ 4650 7000
+Wire Wire Line
+	4500 7000 4650 7000
+Text Label 3900 1950 2    50   ~ 0
+p1_sig
+Text Label 3900 2050 2    50   ~ 0
+p2_sig
+Text Label 3900 2150 2    50   ~ 0
+ign_sig
+Text Label 3900 2250 2    50   ~ 0
+sp_sig
+Wire Wire Line
+	3900 1950 4000 1950
+Wire Wire Line
+	3900 2050 4000 2050
+Wire Wire Line
+	3900 2150 4000 2150
+Wire Wire Line
+	3900 2250 4000 2250
+Text Notes 3400 2050 0    50   ~ 0
+gpio
+Text Label 5200 1650 0    50   ~ 0
+p1_vlo
+Wire Wire Line
+	5200 1650 5100 1650
+Text Label 5200 1750 0    50   ~ 0
+p2_vlo
+Wire Wire Line
+	5200 1750 5100 1750
+Text Label 5200 1850 0    50   ~ 0
+ign_vlo
+Wire Wire Line
+	5200 1850 5100 1850
+Text Label 5200 1950 0    50   ~ 0
+sp_vlo
+Wire Wire Line
+	5200 1950 5100 1950
+Text Notes 5500 1800 0    50   ~ 0
+adc inputs
+Text Notes 3950 6600 0    50   ~ 10
+Voltage Regulation
+Text Label 2700 5350 0    50   ~ 0
+pwm_servoX
+Wire Wire Line
+	2650 5350 2700 5350
+Text Label 2700 5950 0    50   ~ 0
+pwm_servoY
+Wire Wire Line
+	2650 5950 2700 5950
+Text Label 2700 6650 0    50   ~ 0
+pwm_servo3
+Wire Wire Line
+	2650 6650 2700 6650
+Text Label 2700 7250 0    50   ~ 0
+pwm_servo4
+Wire Wire Line
+	2650 7250 2700 7250
+Text Label 1500 5200 0    50   ~ 0
+p1_sig
+Wire Wire Line
+	1500 5200 1450 5200
+Wire Wire Line
+	1450 5300 1500 5300
+Wire Wire Line
+	1450 5400 1500 5400
+Text Label 1500 5300 0    50   ~ 0
+p1_vlo
+Text Label 1500 5400 0    50   ~ 0
+p1_vhi
+$Sheet
+S 800  5750 650  450 
+U 61F91E79
+F0 "parachute2" 50
+F1 "inductor.sch" 50
+F2 "sig" I R 1450 5850 50 
+F3 "v_sens_loside" I R 1450 5950 50 
+F4 "v_hiside" I R 1450 6050 50 
+$EndSheet
+Text Label 1500 5850 0    50   ~ 0
+p2_sig
+Wire Wire Line
+	1500 5850 1450 5850
+Wire Wire Line
+	1450 5950 1500 5950
+Wire Wire Line
+	1450 6050 1500 6050
+Text Label 1500 5950 0    50   ~ 0
+p2_vlo
+Text Label 1500 6050 0    50   ~ 0
+p2_vhi
+$Sheet
+S 800  6400 650  450 
+U 61F965DC
+F0 "ignitor" 50
+F1 "inductor.sch" 50
+F2 "sig" I R 1450 6500 50 
+F3 "v_sens_loside" I R 1450 6600 50 
+F4 "v_hiside" I R 1450 6700 50 
+$EndSheet
+Text Label 1500 6500 0    50   ~ 0
+ign_sig
+Wire Wire Line
+	1500 6500 1450 6500
+Wire Wire Line
+	1450 6600 1500 6600
+Wire Wire Line
+	1450 6700 1500 6700
+Text Label 1500 6600 0    50   ~ 0
+ign_vlo
+Text Label 1500 6700 0    50   ~ 0
+ign_vhi
+$Sheet
+S 800  7050 650  450 
+U 61F965E7
+F0 "spare" 50
+F1 "inductor.sch" 50
+F2 "sig" I R 1450 7150 50 
+F3 "v_sens_loside" I R 1450 7250 50 
+F4 "v_hiside" I R 1450 7350 50 
+$EndSheet
+Text Label 1500 7150 0    50   ~ 0
+sp_sig
+Wire Wire Line
+	1500 7150 1450 7150
+Wire Wire Line
+	1450 7250 1500 7250
+Wire Wire Line
+	1450 7350 1500 7350
+Text Label 1500 7250 0    50   ~ 0
+sp_vlo
+Text Label 1500 7350 0    50   ~ 0
+sp_vhi
+$Comp
+L Device:LED_Small D?
+U 1 1 61E756F2
+P 7300 5200
+F 0 "D?" H 7350 5100 50  0000 C CNN
+F 1 "R" H 7250 5100 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 7300 5200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf" V 7300 5200 50  0001 C CNN
+F 4 "C2286" H 7300 5200 50  0001 C CNN "LCSC"
+	1    7300 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 5200 7100 5200
+Wire Wire Line
+	6900 5200 6800 5200
+Text Label 9550 5050 2    50   ~ 0
+state_init
+Text Label 9550 5300 2    50   ~ 0
+state_armed
+$Comp
+L Device:R_Small R?
+U 1 1 61FD5BE4
+P 9750 5050
+AR Path="/61C27E7D/61FD5BE4" Ref="R?"  Part="1" 
+AR Path="/61C27F52/61FD5BE4" Ref="R?"  Part="1" 
+AR Path="/61C15AA8/61FD5BE4" Ref="R?"  Part="1" 
+AR Path="/61F91E79/61FD5BE4" Ref="R?"  Part="1" 
+AR Path="/61F965DC/61FD5BE4" Ref="R?"  Part="1" 
+AR Path="/61F965E7/61FD5BE4" Ref="R?"  Part="1" 
+AR Path="/61FD5BE4" Ref="R?"  Part="1" 
+F 0 "R?" V 9650 5050 50  0000 C CNN
+F 1 "1k" V 9750 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9750 5050 50  0001 C CNN
+F 3 "~" H 9750 5050 50  0001 C CNN
+F 4 "C21190" V 9750 5050 50  0001 C CNN "LCSC"
+	1    9750 5050
+	0    1    1    0   
+$EndComp
+Text Label 9550 5550 2    50   ~ 0
+state_burn
+Text Label 9550 6050 2    50   ~ 0
+state_recovery
+Text Label 9550 5800 2    50   ~ 0
+state_coast
+Text Label 9550 6300 2    50   ~ 0
+fault
+Wire Wire Line
+	9650 5050 9550 5050
+Wire Wire Line
+	10150 5050 10250 5050
+Wire Wire Line
+	9950 5050 9850 5050
+$Comp
+L Device:R_Small R?
+U 1 1 6203C782
+P 9750 5300
+AR Path="/61C27E7D/6203C782" Ref="R?"  Part="1" 
+AR Path="/61C27F52/6203C782" Ref="R?"  Part="1" 
+AR Path="/61C15AA8/6203C782" Ref="R?"  Part="1" 
+AR Path="/61F91E79/6203C782" Ref="R?"  Part="1" 
+AR Path="/61F965DC/6203C782" Ref="R?"  Part="1" 
+AR Path="/61F965E7/6203C782" Ref="R?"  Part="1" 
+AR Path="/6203C782" Ref="R?"  Part="1" 
+F 0 "R?" V 9650 5300 50  0000 C CNN
+F 1 "1k" V 9750 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9750 5300 50  0001 C CNN
+F 3 "~" H 9750 5300 50  0001 C CNN
+F 4 "C21190" V 9750 5300 50  0001 C CNN "LCSC"
+	1    9750 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 5300 9550 5300
+Wire Wire Line
+	10150 5300 10250 5300
+Wire Wire Line
+	9950 5300 9850 5300
+$Comp
+L Device:R_Small R?
+U 1 1 6203F8EE
+P 9750 5550
+AR Path="/61C27E7D/6203F8EE" Ref="R?"  Part="1" 
+AR Path="/61C27F52/6203F8EE" Ref="R?"  Part="1" 
+AR Path="/61C15AA8/6203F8EE" Ref="R?"  Part="1" 
+AR Path="/61F91E79/6203F8EE" Ref="R?"  Part="1" 
+AR Path="/61F965DC/6203F8EE" Ref="R?"  Part="1" 
+AR Path="/61F965E7/6203F8EE" Ref="R?"  Part="1" 
+AR Path="/6203F8EE" Ref="R?"  Part="1" 
+F 0 "R?" V 9650 5550 50  0000 C CNN
+F 1 "1k" V 9750 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9750 5550 50  0001 C CNN
+F 3 "~" H 9750 5550 50  0001 C CNN
+F 4 "C21190" V 9750 5550 50  0001 C CNN "LCSC"
+	1    9750 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 5550 9550 5550
+Wire Wire Line
+	10150 5550 10250 5550
+Wire Wire Line
+	9950 5550 9850 5550
+$Comp
+L Device:R_Small R?
+U 1 1 62042CAB
+P 9750 5800
+AR Path="/61C27E7D/62042CAB" Ref="R?"  Part="1" 
+AR Path="/61C27F52/62042CAB" Ref="R?"  Part="1" 
+AR Path="/61C15AA8/62042CAB" Ref="R?"  Part="1" 
+AR Path="/61F91E79/62042CAB" Ref="R?"  Part="1" 
+AR Path="/61F965DC/62042CAB" Ref="R?"  Part="1" 
+AR Path="/61F965E7/62042CAB" Ref="R?"  Part="1" 
+AR Path="/62042CAB" Ref="R?"  Part="1" 
+F 0 "R?" V 9650 5800 50  0000 C CNN
+F 1 "1k" V 9750 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9750 5800 50  0001 C CNN
+F 3 "~" H 9750 5800 50  0001 C CNN
+F 4 "C21190" V 9750 5800 50  0001 C CNN "LCSC"
+	1    9750 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 5800 9550 5800
+Wire Wire Line
+	10150 5800 10250 5800
+Wire Wire Line
+	9950 5800 9850 5800
+$Comp
+L Device:R_Small R?
+U 1 1 620461ED
+P 9750 6050
+AR Path="/61C27E7D/620461ED" Ref="R?"  Part="1" 
+AR Path="/61C27F52/620461ED" Ref="R?"  Part="1" 
+AR Path="/61C15AA8/620461ED" Ref="R?"  Part="1" 
+AR Path="/61F91E79/620461ED" Ref="R?"  Part="1" 
+AR Path="/61F965DC/620461ED" Ref="R?"  Part="1" 
+AR Path="/61F965E7/620461ED" Ref="R?"  Part="1" 
+AR Path="/620461ED" Ref="R?"  Part="1" 
+F 0 "R?" V 9650 6050 50  0000 C CNN
+F 1 "1k" V 9750 6050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9750 6050 50  0001 C CNN
+F 3 "~" H 9750 6050 50  0001 C CNN
+F 4 "C21190" V 9750 6050 50  0001 C CNN "LCSC"
+	1    9750 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 6050 9550 6050
+Wire Wire Line
+	10150 6050 10250 6050
+Wire Wire Line
+	9950 6050 9850 6050
+$Comp
+L Device:R_Small R?
+U 1 1 6204D4ED
+P 9750 6300
+AR Path="/61C27E7D/6204D4ED" Ref="R?"  Part="1" 
+AR Path="/61C27F52/6204D4ED" Ref="R?"  Part="1" 
+AR Path="/61C15AA8/6204D4ED" Ref="R?"  Part="1" 
+AR Path="/61F91E79/6204D4ED" Ref="R?"  Part="1" 
+AR Path="/61F965DC/6204D4ED" Ref="R?"  Part="1" 
+AR Path="/61F965E7/6204D4ED" Ref="R?"  Part="1" 
+AR Path="/6204D4ED" Ref="R?"  Part="1" 
+F 0 "R?" V 9650 6300 50  0000 C CNN
+F 1 "1k" V 9750 6300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9750 6300 50  0001 C CNN
+F 3 "~" H 9750 6300 50  0001 C CNN
+F 4 "C21190" V 9750 6300 50  0001 C CNN "LCSC"
+	1    9750 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 6300 9550 6300
+Wire Wire Line
+	10150 6300 10250 6300
+Wire Wire Line
+	9950 6300 9850 6300
+Wire Wire Line
+	10250 5050 10250 5300
+Connection ~ 10250 5300
+Wire Wire Line
+	10250 5300 10250 5550
+Connection ~ 10250 5550
+Wire Wire Line
+	10250 5550 10250 5800
+Connection ~ 10250 5800
+Wire Wire Line
+	10250 5800 10250 6050
+Connection ~ 10250 6050
+Wire Wire Line
+	10250 6050 10250 6300
+Connection ~ 10250 6300
+Wire Wire Line
+	10250 6300 10250 6350
+$Comp
+L power:GND #PWR?
+U 1 1 6205504A
+P 10250 6350
+F 0 "#PWR?" H 10250 6100 50  0001 C CNN
+F 1 "GND" H 10255 6177 50  0000 C CNN
+F 2 "" H 10250 6350 50  0001 C CNN
+F 3 "" H 10250 6350 50  0001 C CNN
+	1    10250 6350
+	1    0    0    -1  
+$EndComp
+Text Label 3900 3150 2    50   ~ 0
+state_init
+Text Label 3900 3250 2    50   ~ 0
+state_armed
+Text Label 3900 3350 2    50   ~ 0
+state_burn
+Text Label 3900 3550 2    50   ~ 0
+state_recovery
+Text Label 3900 3450 2    50   ~ 0
+state_coast
+Text Label 3900 3650 2    50   ~ 0
+fault
+Wire Wire Line
+	4000 3150 3900 3150
+Wire Wire Line
+	4000 3250 3900 3250
+Wire Wire Line
+	4000 3350 3900 3350
+Wire Wire Line
+	4000 3450 3900 3450
+Wire Wire Line
+	4000 3550 3900 3550
+Wire Wire Line
+	4000 3650 3900 3650
+$Comp
+L Device:LED_Small D?
+U 1 1 620CB3FF
+P 10050 6300
+F 0 "D?" H 10100 6200 50  0000 C CNN
+F 1 "R" H 10000 6200 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 10050 6300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf" V 10050 6300 50  0001 C CNN
+F 4 "C2286" H 10050 6300 50  0001 C CNN "LCSC"
+	1    10050 6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 620D52A1
+P 10050 5300
+F 0 "D?" H 10100 5200 50  0000 C CNN
+F 1 "W" H 10000 5200 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 10050 5300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809041711_Hubei-KENTO-Elec-C2290_C2290.pdf" V 10050 5300 50  0001 C CNN
+F 4 "C2290" H 10050 5300 50  0001 C CNN "LCSC"
+	1    10050 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 620D95EE
+P 10050 5550
+F 0 "D?" H 10100 5450 50  0000 C CNN
+F 1 "W" H 10000 5450 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 10050 5550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809041711_Hubei-KENTO-Elec-C2290_C2290.pdf" V 10050 5550 50  0001 C CNN
+F 4 "C2290" H 10050 5550 50  0001 C CNN "LCSC"
+	1    10050 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 620DD925
+P 10050 5800
+F 0 "D?" H 10100 5700 50  0000 C CNN
+F 1 "W" H 10000 5700 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 10050 5800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809041711_Hubei-KENTO-Elec-C2290_C2290.pdf" V 10050 5800 50  0001 C CNN
+F 4 "C2290" H 10050 5800 50  0001 C CNN "LCSC"
+	1    10050 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 620E1F04
+P 10050 6050
+F 0 "D?" H 10100 5950 50  0000 C CNN
+F 1 "W" H 10000 5950 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 10050 6050 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809041711_Hubei-KENTO-Elec-C2290_C2290.pdf" V 10050 6050 50  0001 C CNN
+F 4 "C2290" H 10050 6050 50  0001 C CNN "LCSC"
+	1    10050 6050
+	-1   0    0    1   
+$EndComp
+Text Label 6800 5450 2    50   ~ 0
+p2_vhi
+$Comp
+L Device:LED_Small D?
+U 1 1 620ED752
+P 7300 5450
+F 0 "D?" H 7350 5350 50  0000 C CNN
+F 1 "R" H 7250 5350 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 7300 5450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf" V 7300 5450 50  0001 C CNN
+F 4 "C2286" H 7300 5450 50  0001 C CNN "LCSC"
+	1    7300 5450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 5450 7100 5450
+Wire Wire Line
+	6900 5450 6800 5450
+$Comp
+L Device:R_Small R?
+U 1 1 620F2257
+P 7000 5700
+AR Path="/61C27E7D/620F2257" Ref="R?"  Part="1" 
+AR Path="/61C27F52/620F2257" Ref="R?"  Part="1" 
+AR Path="/61C15AA8/620F2257" Ref="R?"  Part="1" 
+AR Path="/620F2257" Ref="R?"  Part="1" 
+F 0 "R?" V 6900 5700 50  0000 C CNN
+F 1 "10k" V 7000 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7000 5700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811062009_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" H 7000 5700 50  0001 C CNN
+F 4 "C25804" V 7000 5700 50  0001 C CNN "LCSC"
+	1    7000 5700
+	0    1    1    0   
+$EndComp
+Text Label 6800 5700 2    50   ~ 0
+ign_vhi
+$Comp
+L Device:LED_Small D?
+U 1 1 620F225F
+P 7300 5700
+F 0 "D?" H 7350 5600 50  0000 C CNN
+F 1 "R" H 7250 5600 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 7300 5700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf" V 7300 5700 50  0001 C CNN
+F 4 "C2286" H 7300 5700 50  0001 C CNN "LCSC"
+	1    7300 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 5700 7100 5700
+Wire Wire Line
+	6900 5700 6800 5700
+$Comp
+L Device:R_Small R?
+U 1 1 620F6EC1
+P 7000 5950
+AR Path="/61C27E7D/620F6EC1" Ref="R?"  Part="1" 
+AR Path="/61C27F52/620F6EC1" Ref="R?"  Part="1" 
+AR Path="/61C15AA8/620F6EC1" Ref="R?"  Part="1" 
+AR Path="/620F6EC1" Ref="R?"  Part="1" 
+F 0 "R?" V 6900 5950 50  0000 C CNN
+F 1 "10k" V 7000 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7000 5950 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811062009_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" H 7000 5950 50  0001 C CNN
+F 4 "C25804" V 7000 5950 50  0001 C CNN "LCSC"
+	1    7000 5950
+	0    1    1    0   
+$EndComp
+Text Label 6800 5950 2    50   ~ 0
+sp_vhi
+$Comp
+L Device:LED_Small D?
+U 1 1 620F6EC9
+P 7300 5950
+F 0 "D?" H 7350 5850 50  0000 C CNN
+F 1 "R" H 7250 5850 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 7300 5950 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf" V 7300 5950 50  0001 C CNN
+F 4 "C2286" H 7300 5950 50  0001 C CNN "LCSC"
+	1    7300 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 5950 7100 5950
+Wire Wire Line
+	6900 5950 6800 5950
+Wire Wire Line
+	7400 5200 7500 5200
+Wire Wire Line
+	7500 5200 7500 5450
+Wire Wire Line
+	7500 5950 7400 5950
+Connection ~ 7500 5950
+Wire Wire Line
+	7500 5950 7500 6000
+Wire Wire Line
+	7400 5700 7500 5700
+Connection ~ 7500 5700
+Wire Wire Line
+	7500 5700 7500 5950
+Wire Wire Line
+	7400 5450 7500 5450
+Connection ~ 7500 5450
+Wire Wire Line
+	7500 5450 7500 5700
+$Comp
+L power:GND #PWR?
+U 1 1 62117AD6
+P 7500 6000
+F 0 "#PWR?" H 7500 5750 50  0001 C CNN
+F 1 "GND" H 7505 5827 50  0000 C CNN
+F 2 "" H 7500 6000 50  0001 C CNN
+F 3 "" H 7500 6000 50  0001 C CNN
+	1    7500 6000
+	1    0    0    -1  
+$EndComp
+Text Notes 9700 4800 0    50   ~ 10
+State
+Text Notes 3450 3700 0    50   ~ 0
+gpio
+$Comp
+L Device:R_Small R?
+U 1 1 620ED74A
+P 7000 5450
+AR Path="/61C27E7D/620ED74A" Ref="R?"  Part="1" 
+AR Path="/61C27F52/620ED74A" Ref="R?"  Part="1" 
+AR Path="/61C15AA8/620ED74A" Ref="R?"  Part="1" 
+AR Path="/620ED74A" Ref="R?"  Part="1" 
+F 0 "R?" V 6900 5450 50  0000 C CNN
+F 1 "10k" V 7000 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7000 5450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811062009_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" H 7000 5450 50  0001 C CNN
+F 4 "C25804" V 7000 5450 50  0001 C CNN "LCSC"
+	1    7000 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 6216D53B
+P 8150 5400
+F 0 "#PWR?" H 8150 5250 50  0001 C CNN
+F 1 "+BATT" H 8165 5573 50  0000 C CNN
+F 2 "" H 8150 5400 50  0001 C CNN
+F 3 "" H 8150 5400 50  0001 C CNN
+	1    8150 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62179A99
+P 8150 5550
+AR Path="/61C27E7D/62179A99" Ref="R?"  Part="1" 
+AR Path="/61C27F52/62179A99" Ref="R?"  Part="1" 
+AR Path="/61C15AA8/62179A99" Ref="R?"  Part="1" 
+AR Path="/62179A99" Ref="R?"  Part="1" 
+F 0 "R?" H 8050 5550 50  0000 C CNN
+F 1 "10k" V 8150 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8150 5550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811062009_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" H 8150 5550 50  0001 C CNN
+F 4 "C25804" V 8150 5550 50  0001 C CNN "LCSC"
+	1    8150 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 61FCB482
+P 10050 5050
+F 0 "D?" H 10100 4950 50  0000 C CNN
+F 1 "W" H 10000 4950 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 10050 5050 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809041711_Hubei-KENTO-Elec-C2290_C2290.pdf" V 10050 5050 50  0001 C CNN
+F 4 "C2290" H 10050 5050 50  0001 C CNN "LCSC"
+	1    10050 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 6218B346
+P 8150 5800
+F 0 "D?" V 8200 5700 50  0000 C CNN
+F 1 "W" V 8100 5700 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 8150 5800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809041711_Hubei-KENTO-Elec-C2290_C2290.pdf" V 8150 5800 50  0001 C CNN
+F 4 "C2290" H 8150 5800 50  0001 C CNN "LCSC"
+	1    8150 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6219C3FD
+P 8150 5950
+F 0 "#PWR?" H 8150 5700 50  0001 C CNN
+F 1 "GND" H 8155 5777 50  0000 C CNN
+F 2 "" H 8150 5950 50  0001 C CNN
+F 3 "" H 8150 5950 50  0001 C CNN
+	1    8150 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 5950 8150 5900
+Wire Wire Line
+	8150 5650 8150 5700
+Wire Wire Line
+	8150 5450 8150 5400
+$Comp
+L Device:R_Small R?
+U 1 1 621B5285
+P 8450 5550
+AR Path="/61C27E7D/621B5285" Ref="R?"  Part="1" 
+AR Path="/61C27F52/621B5285" Ref="R?"  Part="1" 
+AR Path="/61C15AA8/621B5285" Ref="R?"  Part="1" 
+AR Path="/621B5285" Ref="R?"  Part="1" 
+F 0 "R?" H 8350 5550 50  0000 C CNN
+F 1 "10k" V 8450 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8450 5550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811062009_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" H 8450 5550 50  0001 C CNN
+F 4 "C25804" V 8450 5550 50  0001 C CNN "LCSC"
+	1    8450 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 621B528C
+P 8450 5800
+F 0 "D?" V 8500 5700 50  0000 C CNN
+F 1 "W" V 8400 5700 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" V 8450 5800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809041711_Hubei-KENTO-Elec-C2290_C2290.pdf" V 8450 5800 50  0001 C CNN
+F 4 "C2290" H 8450 5800 50  0001 C CNN "LCSC"
+	1    8450 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 621B5292
+P 8450 5950
+F 0 "#PWR?" H 8450 5700 50  0001 C CNN
+F 1 "GND" H 8455 5777 50  0000 C CNN
+F 2 "" H 8450 5950 50  0001 C CNN
+F 3 "" H 8450 5950 50  0001 C CNN
+	1    8450 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 5950 8450 5900
+Wire Wire Line
+	8450 5650 8450 5700
+Wire Wire Line
+	8450 5450 8450 5400
+$Comp
+L power:+3V3 #PWR?
+U 1 1 621BABEF
+P 8450 5400
+F 0 "#PWR?" H 8450 5250 50  0001 C CNN
+F 1 "+3V3" H 8465 5573 50  0000 C CNN
+F 2 "" H 8450 5400 50  0001 C CNN
+F 3 "" H 8450 5400 50  0001 C CNN
+	1    8450 5400
+	1    0    0    -1  
+$EndComp
+Text Notes 8200 4800 0    50   ~ 10
+Power
+Text Label 5950 6100 0    50   ~ 0
+vbatt
+$Sheet
+S 4950 5800 650  450 
+U 61DB5304
+F0 "batt-meas" 50
+F1 "batt-div.sch" 50
+F2 "vo" O R 5600 6100 50 
+F3 "vi" I R 5600 6000 50 
+$EndSheet
+Text Notes 7700 6750 0    50   ~ 10
+LAYOUT: indicators must be clearly\nlabelled on silkscreen
+Wire Wire Line
+	5600 6000 5750 6000
+Wire Wire Line
+	5600 6100 5750 6100
+Wire Wire Line
+	5750 6200 5750 6100
+Connection ~ 5750 6100
+Wire Wire Line
+	5750 6100 5950 6100
+Wire Notes Line width 20
+	550  4250 10500 4250
+Wire Notes Line
+	10900 4500 10900 4450
+Wire Wire Line
+	5750 5900 5750 6000
+Text Notes 3450 7750 0    50   ~ 10
+LAYOUT: decoupling cap must be close to chip
+Wire Wire Line
+	3550 5250 3550 5200
+Wire Wire Line
+	3550 5250 3800 5250
+Text Notes 7400 1550 0    50   ~ 10
+GPS
+Wire Wire Line
+	7400 1750 7450 1750
+Wire Wire Line
+	7400 1850 7450 1850
+Wire Wire Line
+	7400 1950 7450 1950
+Wire Wire Line
+	7400 2050 7450 2050
+Text Label 7400 2050 2    50   ~ 0
+SDA
+Text Label 7400 1950 2    50   ~ 0
+SCL
+$Comp
+L power:GND #PWR?
+U 1 1 61D43709
+P 7400 1850
+F 0 "#PWR?" H 7400 1600 50  0001 C CNN
+F 1 "GND" V 7405 1722 50  0000 R CNN
+F 2 "" H 7400 1850 50  0001 C CNN
+F 3 "" H 7400 1850 50  0001 C CNN
+	1    7400 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61D430DB
+P 7400 1750
+F 0 "#PWR?" H 7400 1600 50  0001 C CNN
+F 1 "+3V3" V 7415 1878 50  0000 L CNN
+F 2 "" H 7400 1750 50  0001 C CNN
+F 3 "" H 7400 1750 50  0001 C CNN
+	1    7400 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 61C52D85
+P 7650 1850
+F 0 "J?" H 7730 1842 50  0000 L CNN
+F 1 "ZOE-M8Q" H 7730 1751 50  0000 L CNN
+F 2 "" H 7650 1850 50  0001 C CNN
+F 3 "https://www.sparkfun.com/products/15193" H 7650 1850 50  0001 C CNN
+	1    7650 1850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

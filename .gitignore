@@ -35,6 +35,8 @@ Private
 *.kicad_prl
 *.sch-bak
 *~
+*.cache.lib
+
 _autosave-*
 *.tmp
 *-save.pro
