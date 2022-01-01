@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 8
+Sheet 1 14
 Title ""
 Date ""
 Rev ""
@@ -16,216 +16,161 @@ $EndDescr
 $Comp
 L Connector:Conn_01x02_Female J?
 U 1 1 61C13606
-P 9400 1550
-F 0 "J?" H 9428 1526 50  0000 L CNN
-F 1 "XT60" H 9428 1435 50  0000 L CNN
-F 2 "" H 9400 1550 50  0001 C CNN
-F 3 "~" H 9400 1550 50  0001 C CNN
-	1    9400 1550
+P 5000 6150
+F 0 "J?" H 5028 6126 50  0000 L CNN
+F 1 "XT60" H 5028 6035 50  0000 L CNN
+F 2 "" H 5000 6150 50  0001 C CNN
+F 3 "~" H 5000 6150 50  0001 C CNN
+	1    5000 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61C139D5
-P 9100 1750
-F 0 "#PWR?" H 9100 1500 50  0001 C CNN
-F 1 "GND" H 9105 1577 50  0000 C CNN
-F 2 "" H 9100 1750 50  0001 C CNN
-F 3 "" H 9100 1750 50  0001 C CNN
-	1    9100 1750
+P 4700 6350
+F 0 "#PWR?" H 4700 6100 50  0001 C CNN
+F 1 "GND" H 4705 6177 50  0000 C CNN
+F 2 "" H 4700 6350 50  0001 C CNN
+F 3 "" H 4700 6350 50  0001 C CNN
+	1    4700 6350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9200 1650 9100 1650
+	4800 6250 4700 6250
 Wire Wire Line
-	9100 1650 9100 1750
+	4700 6250 4700 6350
 $Comp
 L Device:D_Schottky D?
 U 1 1 61C14F25
-P 8900 1550
-F 0 "D?" H 8900 1766 50  0000 C CNN
-F 1 "D_Schottky" H 8900 1675 50  0000 C CNN
-F 2 "" H 8900 1550 50  0001 C CNN
-F 3 "~" H 8900 1550 50  0001 C CNN
-	1    8900 1550
+P 4500 6150
+F 0 "D?" H 4500 6366 50  0000 C CNN
+F 1 "D_Schottky" H 4500 6275 50  0000 C CNN
+F 2 "" H 4500 6150 50  0001 C CNN
+F 3 "~" H 4500 6150 50  0001 C CNN
+	1    4500 6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9050 1550 9200 1550
+	4650 6150 4800 6150
 Wire Wire Line
-	8750 1550 8600 1550
+	4350 6150 4200 6150
 Wire Wire Line
-	8600 1550 8600 1450
+	4200 6150 4200 6050
 $Comp
 L power:+BATT #PWR?
 U 1 1 61C1565C
-P 8600 1450
-F 0 "#PWR?" H 8600 1300 50  0001 C CNN
-F 1 "+BATT" H 8615 1623 50  0000 C CNN
-F 2 "" H 8600 1450 50  0001 C CNN
-F 3 "" H 8600 1450 50  0001 C CNN
-	1    8600 1450
+P 4200 6050
+F 0 "#PWR?" H 4200 5900 50  0001 C CNN
+F 1 "+BATT" H 4215 6223 50  0000 C CNN
+F 2 "" H 4200 6050 50  0001 C CNN
+F 3 "" H 4200 6050 50  0001 C CNN
+	1    4200 6050
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 800  7100 650  450 
+S 700  6700 650  450 
 U 61C15AA8
 F0 "ignitor" 50
 F1 "inductor.sch" 50
-F2 "sig" I R 1450 7300 50 
+F2 "sig" I R 1350 6900 50 
+F3 "v_loside" I R 1350 6850 50 
 $EndSheet
-Text Notes 8800 1250 0    50   ~ 0
+Text Notes 4400 5850 0    50   ~ 0
 schottky must be rated to 10A+
 $Sheet
-S 1850 6450 650  450 
+S 1650 5400 650  450 
 U 61C229AC
 F0 "servoX/1" 50
 F1 "servo.sch" 50
-F2 "pwm" I R 2500 6700 50 
+F2 "pwm" I R 2300 5650 50 
 $EndSheet
 $Sheet
-S 1850 7100 650  450 
+S 1650 6050 650  450 
 U 61C267AB
 F0 "servoY/2" 50
 F1 "servo.sch" 50
-F2 "pwm" I R 2500 7300 50 
+F2 "pwm" I R 2300 6250 50 
 $EndSheet
 $Sheet
-S 800  5800 650  450 
+S 700  5400 650  450 
 U 61C27F52
 F0 "parachute2" 50
 F1 "inductor.sch" 50
-F2 "sig" I R 1450 6050 50 
+F2 "sig" I R 1350 5650 50 
+F3 "v_loside" I R 1350 5550 50 
 $EndSheet
-$Comp
-L Device:R R?
-U 1 1 61C2ADC0
-P 9050 5150
-F 0 "R?" H 9120 5196 50  0000 L CNN
-F 1 "5k6" H 9120 5105 50  0000 L CNN
-F 2 "" V 8980 5150 50  0001 C CNN
-F 3 "~" H 9050 5150 50  0001 C CNN
-	1    9050 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61C2BA2C
-P 9050 5550
-F 0 "R?" H 9120 5596 50  0000 L CNN
-F 1 "1k" H 9120 5505 50  0000 L CNN
-F 2 "" V 8980 5550 50  0001 C CNN
-F 3 "~" H 9050 5550 50  0001 C CNN
-	1    9050 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 5300 9050 5350
-$Comp
-L power:GND #PWR?
-U 1 1 61C2BBC9
-P 9050 5800
-F 0 "#PWR?" H 9050 5550 50  0001 C CNN
-F 1 "GND" H 9055 5627 50  0000 C CNN
-F 2 "" H 9050 5800 50  0001 C CNN
-F 3 "" H 9050 5800 50  0001 C CNN
-	1    9050 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 5750 9050 5700
-$Comp
-L power:+BATT #PWR?
-U 1 1 61C2C0C2
-P 9050 4950
-F 0 "#PWR?" H 9050 4800 50  0001 C CNN
-F 1 "+BATT" H 9065 5123 50  0000 C CNN
-F 2 "" H 9050 4950 50  0001 C CNN
-F 3 "" H 9050 4950 50  0001 C CNN
-	1    9050 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 4950 9050 5000
-Connection ~ 9050 5350
-Wire Wire Line
-	9050 5350 9050 5400
-Text Label 9500 5350 0    50   ~ 0
-vbatt
-Text Notes 8050 6150 0    50   ~ 0
-vbatt must not exceed 3v3 with +batt up to 20v
 $Comp
 L dino:TEENSY3.6 U?
 U 1 1 61C2E455
-P 5250 3100
-F 0 "U?" H 5800 3325 50  0000 C CNN
-F 1 "TEENSY3.6" H 5800 3234 50  0000 C CNN
-F 2 "" H 5800 3200 50  0001 C CNN
-F 3 "" H 5800 3200 50  0001 C CNN
-	1    5250 3100
+P 3950 1400
+F 0 "U?" H 4500 1625 50  0000 C CNN
+F 1 "TEENSY3.6" H 4500 1534 50  0000 C CNN
+F 2 "" H 4500 1500 50  0001 C CNN
+F 3 "" H 4500 1500 50  0001 C CNN
+	1    3950 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61C30CB6
-P 6400 3200
-F 0 "#PWR?" H 6400 2950 50  0001 C CNN
-F 1 "GND" V 6405 3072 50  0000 R CNN
-F 2 "" H 6400 3200 50  0001 C CNN
-F 3 "" H 6400 3200 50  0001 C CNN
-	1    6400 3200
+P 5100 1500
+F 0 "#PWR?" H 5100 1250 50  0001 C CNN
+F 1 "GND" V 5105 1372 50  0000 R CNN
+F 2 "" H 5100 1500 50  0001 C CNN
+F 3 "" H 5100 1500 50  0001 C CNN
+	1    5100 1500
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6400 3200 6350 3200
+	5100 1500 5050 1500
 $Comp
 L power:GND #PWR?
 U 1 1 61C329EA
-P 6400 4500
-F 0 "#PWR?" H 6400 4250 50  0001 C CNN
-F 1 "GND" V 6405 4372 50  0000 R CNN
-F 2 "" H 6400 4500 50  0001 C CNN
-F 3 "" H 6400 4500 50  0001 C CNN
-	1    6400 4500
+P 5100 2800
+F 0 "#PWR?" H 5100 2550 50  0001 C CNN
+F 1 "GND" V 5105 2672 50  0000 R CNN
+F 2 "" H 5100 2800 50  0001 C CNN
+F 3 "" H 5100 2800 50  0001 C CNN
+	1    5100 2800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6400 4500 6350 4500
+	5100 2800 5050 2800
 $Comp
 L power:GND #PWR?
 U 1 1 61C32E84
-P 5200 3100
-F 0 "#PWR?" H 5200 2850 50  0001 C CNN
-F 1 "GND" V 5205 2972 50  0000 R CNN
-F 2 "" H 5200 3100 50  0001 C CNN
-F 3 "" H 5200 3100 50  0001 C CNN
-	1    5200 3100
+P 3900 1400
+F 0 "#PWR?" H 3900 1150 50  0001 C CNN
+F 1 "GND" V 3905 1272 50  0000 R CNN
+F 2 "" H 3900 1400 50  0001 C CNN
+F 3 "" H 3900 1400 50  0001 C CNN
+	1    3900 1400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5200 3100 5250 3100
+	3900 1400 3950 1400
 Wire Wire Line
-	6400 3100 6350 3100
+	5100 1400 5050 1400
 $Comp
 L power:+5V #PWR?
 U 1 1 61C21E5E
-P 6400 3100
-F 0 "#PWR?" H 6400 2950 50  0001 C CNN
-F 1 "+5V" V 6415 3228 50  0000 L CNN
-F 2 "" H 6400 3100 50  0001 C CNN
-F 3 "" H 6400 3100 50  0001 C CNN
-	1    6400 3100
+P 5100 1400
+F 0 "#PWR?" H 5100 1250 50  0001 C CNN
+F 1 "+5V" V 5115 1528 50  0000 L CNN
+F 2 "" H 5100 1400 50  0001 C CNN
+F 3 "" H 5100 1400 50  0001 C CNN
+	1    5100 1400
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x08 J?
 U 1 1 61C26038
-P 9100 3950
-F 0 "J?" H 9180 3942 50  0000 L CNN
-F 1 "nRF24L01+_Breakout" H 9180 3851 50  0000 L CNN
-F 2 "" H 9100 3950 50  0001 C CNN
-F 3 "https://www.sparkfun.com/products/691" H 9100 3950 50  0001 C CNN
-	1    9100 3950
+P 9250 2400
+F 0 "J?" H 9330 2392 50  0000 L CNN
+F 1 "nRF24L01+_Breakout" H 9330 2301 50  0000 L CNN
+F 2 "" H 9250 2400 50  0001 C CNN
+F 3 "https://www.sparkfun.com/products/691" H 9250 2400 50  0001 C CNN
+	1    9250 2400
 	1    0    0    -1  
 $EndComp
 $Bitmap
@@ -4172,95 +4117,235 @@ F5 04 09 12 84 01 82 AE 27 48 90 20 0C 10 74 3D 41 82 04 61 80 A0 EB 09 12 24 08
 82 04 09 F2 9F E3 FF 01 E8 1B FE 6E EC D9 50 33 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Label 1550 6050 0    50   ~ 0
-PTD0
 Wire Wire Line
-	1550 6050 1450 6050
+	1450 5650 1350 5650
 Wire Wire Line
-	1550 6700 1450 6700
+	1450 6300 1350 6300
 Wire Wire Line
-	1550 7300 1450 7300
-Text Label 2600 6700 0    50   ~ 0
-PTD0
+	1450 6900 1350 6900
 Wire Wire Line
-	2600 6700 2500 6700
-Text Label 2600 7300 0    50   ~ 0
-PTD0
+	2400 5650 2300 5650
 Wire Wire Line
-	2600 7300 2500 7300
+	2400 6250 2300 6250
 $Sheet
-S 2900 6450 650  450 
+S 1650 6700 650  450 
 U 61C3727F
 F0 "servo3" 50
 F1 "servo.sch" 50
-F2 "pwm" I R 3550 6700 50 
+F2 "pwm" I R 2300 6950 50 
 $EndSheet
 $Sheet
-S 2900 7100 650  450 
+S 1650 7350 650  450 
 U 61C37282
 F0 "servo4" 50
 F1 "servo.sch" 50
-F2 "pwm" I R 3550 7300 50 
+F2 "pwm" I R 2300 7550 50 
 $EndSheet
-Text Label 3650 6700 0    50   ~ 0
-PTD0
 Wire Wire Line
-	3650 6700 3550 6700
-Text Label 3650 7300 0    50   ~ 0
-PTD0
+	2400 6950 2300 6950
 Wire Wire Line
-	3650 7300 3550 7300
-$Sheet
-S 800  6450 650  450 
-U 61C27E7D
-F0 "parachute1" 50
-F1 "inductor.sch" 50
-F2 "sig" I R 1450 6700 50 
-$EndSheet
+	2400 7550 2300 7550
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 61C52D85
-P 9100 2900
-F 0 "J?" H 9180 2892 50  0000 L CNN
-F 1 "ZOE-M8Q" H 9180 2801 50  0000 L CNN
-F 2 "" H 9100 2900 50  0001 C CNN
-F 3 "https://www.sparkfun.com/products/15193" H 9100 2900 50  0001 C CNN
-	1    9100 2900
+P 7750 2050
+F 0 "J?" H 7830 2042 50  0000 L CNN
+F 1 "ZOE-M8Q" H 7830 1951 50  0000 L CNN
+F 2 "" H 7750 2050 50  0001 C CNN
+F 3 "https://www.sparkfun.com/products/15193" H 7750 2050 50  0001 C CNN
+	1    7750 2050
 	1    0    0    -1  
 $EndComp
-Text Notes 8850 2600 0    50   ~ 0
-GPS Module\nTODO: pinout
-Text Notes 8850 3450 0    50   ~ 0
-Antenna Module\nTODO: pinout
-Text Notes 2500 6100 0    50   ~ 0
-TODO: pinout
-Text Label 1550 6700 0    50   ~ 0
-PTD0
-Text Label 1550 7300 0    50   ~ 0
-PTD0
+Text Notes 8950 1900 0    50   ~ 10
+COMMS
+Text Label 9000 2600 2    50   ~ 0
+MISO
+Text Label 9000 2200 2    50   ~ 0
+CE
+Text Label 9000 2700 2    50   ~ 0
+IRQ
+Text Label 9000 2500 2    50   ~ 0
+MOSI
+Text Label 9000 2400 2    50   ~ 0
+SCK
+Text Label 9000 2300 2    50   ~ 0
+CSN
 $Comp
-L Device:D_Zener D?
-U 1 1 61C6C834
-P 9400 5550
-F 0 "D?" V 9354 5629 50  0000 L CNN
-F 1 "Zener 3V3, 5%" V 9445 5629 50  0000 L CNN
-F 2 "" H 9400 5550 50  0001 C CNN
-F 3 "~" H 9400 5550 50  0001 C CNN
-	1    9400 5550
+L power:+3V3 #PWR?
+U 1 1 61D37B4C
+P 5100 1600
+F 0 "#PWR?" H 5100 1450 50  0001 C CNN
+F 1 "+3V3" V 5115 1728 50  0000 L CNN
+F 2 "" H 5100 1600 50  0001 C CNN
+F 3 "" H 5100 1600 50  0001 C CNN
+	1    5100 1600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9050 5350 9400 5350
+	5100 1600 5050 1600
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61D3A0FD
+P 3900 2800
+F 0 "#PWR?" H 3900 2650 50  0001 C CNN
+F 1 "+3V3" V 3915 2928 50  0000 L CNN
+F 2 "" H 3900 2800 50  0001 C CNN
+F 3 "" H 3900 2800 50  0001 C CNN
+	1    3900 2800
+	0    -1   1    0   
+$EndComp
 Wire Wire Line
-	9400 5700 9400 5750
+	3900 2800 3950 2800
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61D430DB
+P 7500 1950
+F 0 "#PWR?" H 7500 1800 50  0001 C CNN
+F 1 "+3V3" V 7515 2078 50  0000 L CNN
+F 2 "" H 7500 1950 50  0001 C CNN
+F 3 "" H 7500 1950 50  0001 C CNN
+	1    7500 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D43709
+P 7500 2050
+F 0 "#PWR?" H 7500 1800 50  0001 C CNN
+F 1 "GND" V 7505 1922 50  0000 R CNN
+F 2 "" H 7500 2050 50  0001 C CNN
+F 3 "" H 7500 2050 50  0001 C CNN
+	1    7500 2050
+	0    1    1    0   
+$EndComp
+Text Label 7500 2150 2    50   ~ 0
+SCL
+Text Label 7500 2250 2    50   ~ 0
+SDA
 Wire Wire Line
-	9400 5750 9050 5750
-Connection ~ 9050 5750
+	7500 2250 7550 2250
 Wire Wire Line
-	9050 5800 9050 5750
+	7500 2150 7550 2150
 Wire Wire Line
-	9400 5400 9400 5350
-Connection ~ 9400 5350
+	7500 2050 7550 2050
 Wire Wire Line
-	9400 5350 9500 5350
+	7500 1950 7550 1950
+Wire Wire Line
+	9000 2200 9050 2200
+Wire Wire Line
+	9000 2300 9050 2300
+Wire Wire Line
+	9000 2400 9050 2400
+Wire Wire Line
+	9000 2500 9050 2500
+Wire Wire Line
+	9000 2600 9050 2600
+Wire Wire Line
+	9000 2700 9050 2700
+NoConn ~ 5050 2700
+Text Notes 5100 2700 0    50   ~ 0
+do not connect led gpio
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61D59E6C
+P 9000 2100
+F 0 "#PWR?" H 9000 1950 50  0001 C CNN
+F 1 "+3V3" V 9015 2228 50  0000 L CNN
+F 2 "" H 9000 2100 50  0001 C CNN
+F 3 "" H 9000 2100 50  0001 C CNN
+	1    9000 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 2100 9050 2100
+$Comp
+L power:GND #PWR?
+U 1 1 61D5E081
+P 9000 2800
+F 0 "#PWR?" H 9000 2550 50  0001 C CNN
+F 1 "GND" V 9005 2672 50  0000 R CNN
+F 2 "" H 9000 2800 50  0001 C CNN
+F 3 "" H 9000 2800 50  0001 C CNN
+	1    9000 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9000 2800 9050 2800
+Text Notes 1300 4550 0    79   ~ 16
+Actuators
+Text Notes 8250 800  0    79   ~ 16
+Sensors
+Text Notes 4200 4550 0    79   ~ 16
+Power System
+$Sheet
+S 700  7350 650  450 
+U 61D7382A
+F0 "spare" 50
+F1 "inductor.sch" 50
+F2 "sig" I R 1350 7550 50 
+F3 "v_loside" I R 1350 7650 50 
+$EndSheet
+Wire Wire Line
+	1450 7550 1350 7550
+Wire Notes Line width 20
+	6300 6650 6300 600 
+Text Notes 7500 1750 0    50   ~ 10
+GPS
+Text Notes 4350 6750 0    50   ~ 10
+Battery
+Text Notes 4300 5550 0    50   ~ 10
+Reverse Polarity Protection
+$Sheet
+S 4050 6950 650  450 
+U 61DB5304
+F0 "sheet61DB5301" 50
+F1 "batt-div.sch" 50
+F2 "vo" O R 4700 7250 50 
+F3 "vi" I R 4700 7150 50 
+$EndSheet
+$Comp
+L power:+BATT #PWR?
+U 1 1 61DBE3A0
+P 4750 7150
+F 0 "#PWR?" H 4750 7000 50  0001 C CNN
+F 1 "+BATT" H 4765 7323 50  0000 C CNN
+F 2 "" H 4750 7150 50  0001 C CNN
+F 3 "" H 4750 7150 50  0001 C CNN
+	1    4750 7150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 7150 4700 7150
+Text Label 4800 7250 0    50   ~ 0
+vbatt
+Wire Wire Line
+	4700 7250 4800 7250
+Wire Notes Line width 20
+	6250 4250 500  4250
+Text Notes 4400 800  0    79   ~ 16
+MCU
+Text Notes 6550 6500 0    79   ~ 0
+TODO\n- pinout\n- diode selection\n- IMU selection\n- lcsc part numbers\n- servo connectors\n- gps footprint\n- comms footprint
+Text Label 3850 2700 2    50   ~ 0
+MISO
+Text Label 3850 2600 2    50   ~ 0
+MOSI
+Wire Notes Line width 20
+	3300 4300 3300 7950
+$Sheet
+S 700  6050 650  450 
+U 61C27E7D
+F0 "parachute1" 50
+F1 "inductor.sch" 50
+F2 "sig" I R 1350 6300 50 
+F3 "v_loside" I R 1350 6200 50 
+$EndSheet
+Text Label 5150 2600 0    50   ~ 0
+SCK
+Wire Wire Line
+	5150 2600 5050 2600
+Wire Wire Line
+	3850 2700 3950 2700
+Wire Wire Line
+	3850 2600 3950 2600
 $EndSCHEMATC

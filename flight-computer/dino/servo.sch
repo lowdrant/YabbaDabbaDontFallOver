@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 3 8
+Sheet 8 14
 Title ""
 Date ""
 Rev ""
@@ -21,6 +21,7 @@ AR Path="/61C229AC/61C23A44" Ref="J?"  Part="1"
 AR Path="/61C267AB/61C23A44" Ref="J?"  Part="1" 
 AR Path="/61C3727F/61C23A44" Ref="J?"  Part="1" 
 AR Path="/61C37282/61C23A44" Ref="J?"  Part="1" 
+AR Path="/61DB5304/61C23A44" Ref="J?"  Part="1" 
 F 0 "J?" H 5830 4242 50  0000 L CNN
 F 1 "Screw_Terminal_01x03" H 5830 4151 50  0000 L CNN
 F 2 "" H 5750 4200 50  0001 C CNN
@@ -36,6 +37,7 @@ AR Path="/61C229AC/61C249E5" Ref="#PWR?"  Part="1"
 AR Path="/61C267AB/61C249E5" Ref="#PWR?"  Part="1" 
 AR Path="/61C3727F/61C249E5" Ref="#PWR?"  Part="1" 
 AR Path="/61C37282/61C249E5" Ref="#PWR?"  Part="1" 
+AR Path="/61DB5304/61C249E5" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 5450 3850 50  0001 C CNN
 F 1 "+BATT" H 5465 4173 50  0000 C CNN
 F 2 "" H 5450 4000 50  0001 C CNN
@@ -59,6 +61,7 @@ AR Path="/61C229AC/61C25305" Ref="#PWR?"  Part="1"
 AR Path="/61C267AB/61C25305" Ref="#PWR?"  Part="1" 
 AR Path="/61C3727F/61C25305" Ref="#PWR?"  Part="1" 
 AR Path="/61C37282/61C25305" Ref="#PWR?"  Part="1" 
+AR Path="/61DB5304/61C25305" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 5450 4150 50  0001 C CNN
 F 1 "GND" H 5455 4227 50  0000 C CNN
 F 2 "" H 5450 4400 50  0001 C CNN
